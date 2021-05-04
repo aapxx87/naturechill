@@ -8,7 +8,8 @@ let count = 1;
 
 
 btnStart.addEventListener('click', function() {
-  document.querySelector('.containerStartPage').style.display = 'none'
+  // document.querySelector('.containerStartPage').style.display = 'none'
+    document.querySelector('.containerStartPage').style.transform = 'translateY(-100vh)'
 })
 
 
@@ -39,6 +40,6 @@ btnPrev.addEventListener('click', function() {
 btnRandom.addEventListener('click', function() {
 
   count = Math.trunc(Math.random() * 26) + 1;
-  
+
   document.querySelector('.container').style.backgroundImage = `url(img/${count}.jpeg)`
 })

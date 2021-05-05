@@ -20,7 +20,7 @@
 
 let count = 1;
 
-const imgNumbers = 27;
+const imgNumbers = 32;
 
 // сервисный центр
 
@@ -43,7 +43,7 @@ const imgPreviewBoxes = document.querySelectorAll('.containerAllPreview-preview'
 
   btnNext.addEventListener('click', function() {
 
-    if (count < 27) {
+    if (count < 32) {
       count++
       containerImg.style.backgroundImage = `url(img/${count}.jpeg)`
     } else {
@@ -59,7 +59,7 @@ const imgPreviewBoxes = document.querySelectorAll('.containerAllPreview-preview'
       count--
       containerImg.style.backgroundImage = `url(img/${count}.jpeg)`
     } else {
-      count = 27
+      count = 32
       containerImg.style.backgroundImage = `url(img/${count}.jpeg)`
     }
   })
@@ -67,7 +67,7 @@ const imgPreviewBoxes = document.querySelectorAll('.containerAllPreview-preview'
 
   btnRandom.addEventListener('click', function() {
 
-    count = Math.trunc(Math.random() * 26) + 1;
+    count = Math.trunc(Math.random() * 31) + 1;
 
     containerImg.style.backgroundImage = `url(img/${count}.jpeg)`
   })

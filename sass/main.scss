@@ -1,5 +1,7 @@
-@import 'basic';
-@import 'container';
-@import 'changePanel';
-@import 'buttons';
-@import 'startContainer';
+@import 'base/basic';
+
+@import 'components/container';
+@import 'components/changePanel';
+@import 'components/buttons';
+@import 'components/startContainer';
+@import 'components/containerAllPreview';

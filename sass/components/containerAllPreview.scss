@@ -3,8 +3,10 @@
   bottom: 0;
   left: 0;
 
-  width: 100%;
+  width: 96%;
   height: 300px;
+
+  margin-left: 2%;
 
   background-color: rgb(124, 121, 122);
   z-index: -20;
@@ -17,13 +19,19 @@
   -webkit-backdrop-filter: blur(15px);
 
   padding-top: 20px;
+
+  // border-top-left-radius: 15px;
+  // border-top-right-radius: 15px;
+  border-radius: 15px;
+
+  -webkit-box-shadow: 0px -12px 21px -16px rgba(0,0,0,0.87);
+  box-shadow: 0px -12px 21px -16px rgba(0,0,0,0.87);
 }
 
 .scrollBox {
   width: 95%;
   height: 260px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 3%;
 
   overflow-y: scroll;
   overflow-x: hidden;
@@ -40,10 +48,54 @@
   background-image: url(img/1.jpeg);
   background-position: center;
   background-size: cover;
+
+  border-radius: 15px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: all .3s;
+
+  &:active {
+    transform: scale(.92);
+  }
 }
 
 
-.imgList {
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
+  z-index: 25;
+  transition: all 1s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// d

@@ -14,6 +14,7 @@
   const containerAllPreview = document.querySelector('.containerAllPreview')
   const scrollBox = document.querySelector('.scrollBox')
 
+  const overlay = document.querySelector('.overlay')
 //
 
 
@@ -21,7 +22,7 @@ let count = 1;
 
 const imgNumbers = 27;
 
-
+// сервисный центр
 
 for (let i = 1; i <= imgNumbers; i++) {
   scrollBox.insertAdjacentHTML("beforeEnd", `<div class="containerAllPreview-preview" style="background-image: url(img/${i}.jpeg);"></div>`)
@@ -74,14 +75,18 @@ const imgPreviewBoxes = document.querySelectorAll('.containerAllPreview-preview'
 
   btnList.addEventListener('click', function() {
 
-    changePanel.style.transform = 'translateY(-300px)'
+    overlay.style.display = 'block'
+
+    changePanel.style.transform = 'translateY(-290px)'
 
     containerAllPreview.style.zIndex = '30'
-    containerAllPreview.style.transform = 'translateY(0)'
+    containerAllPreview.style.transform = 'translateY(-20px)'
   })
 
 
-  containerImg.addEventListener('click', function() {
+  overlay.addEventListener('click', function() {
+
+    overlay.style.display = 'none'
 
     changePanel.style.transform = 'translateY(0)'
     containerAllPreview.style.zIndex = '-30'

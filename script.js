@@ -144,6 +144,16 @@ document.querySelector('.section-Main_Page-Vertical-button').addEventListener('c
 
 document.querySelector('.btn-menu').addEventListener('click', function() {
 
+  document.querySelector('.container-Vertical_Img_Link--img1').src = `img/vertical/${Math.trunc(Math.random() * 51) + 1}.jpeg`
+
+  document.querySelector('.container-Vertical_Img_Link--img2').src = `img/vertical/${Math.trunc(Math.random() * 50) + 1}.jpeg`
+
+  document.querySelector('.container-Vertical_Img_Link--img3').src = `img/vertical/${Math.trunc(Math.random() * 49) + 1}.jpeg`
+
+  document.querySelector('.container-Vertical_Img_Link--img4').src = `img/vertical/${Math.trunc(Math.random() * 48) + 1}.jpeg`
+
+  
+
   document.querySelector('.section-Main_Page').style.display = 'block'
   document.querySelector('.section-Vertical_Img').style.display = 'none'
 })

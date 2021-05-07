@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -105,7 +104,6 @@ body {
     box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3); }
 
 .container-Start_Page {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -116,12 +114,13 @@ body {
   background-size: cover;
   z-index: 99;
   text-align: center;
-  transition: all 1sж h3;
-    transition-color: #fff;
-    transition-font-size: 43px;
-    transition-letter-spacing: 3px;
-    transition-font-weight: 100;
-    transition-margin-top: 150px; }
+  transition: all 1s; }
+  .container-Start_Page h3 {
+    color: #fff;
+    font-size: 43px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-top: 150px; }
 
 .container-Main_Img_View {
   width: 100%;

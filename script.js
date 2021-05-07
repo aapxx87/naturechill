@@ -37,7 +37,7 @@ const imgNumbers = 52;
 
 // Цикл для выгрузки превью img в выезжающий блок предпросмотра (scrollBox)
 for (let i = 1; i <= imgNumbers; i++) {
-  scrollBox.insertAdjacentHTML("beforeEnd", `<div class="container-Img_Preview--Preview_Img_Box" style="background-image: url(img/${i}.jpeg);"></div>`)
+  scrollBox.insertAdjacentHTML("beforeEnd", `<div class="container-Img_Preview--Preview_Img_Box" style="background-image: url(img/vertical/${i}.jpeg);"></div>`)
 }
 
 
@@ -53,10 +53,10 @@ btnNext.addEventListener('click', function() {
 
   if (count < 53) {
     count++
-    containerImg.style.backgroundImage = `url(img/${count}.jpeg)`
+    containerImg.style.backgroundImage = `url(img/vertical/${count}.jpeg)`
   } else {
     count = 1
-    containerImg.style.backgroundImage = `url(img/${count}.jpeg)`
+    containerImg.style.backgroundImage = `url(img/vertical/${count}.jpeg)`
   }
 })
 
@@ -65,10 +65,10 @@ btnPrev.addEventListener('click', function() {
 
   if (count > 1) {
     count--
-    containerImg.style.backgroundImage = `url(img/${count}.jpeg)`
+    containerImg.style.backgroundImage = `url(img/vertical/${count}.jpeg)`
   } else {
     count = 52
-    containerImg.style.backgroundImage = `url(img/${count}.jpeg)`
+    containerImg.style.backgroundImage = `url(img/vertical/${count}.jpeg)`
   }
 })
 
@@ -77,7 +77,7 @@ btnRandom.addEventListener('click', function() {
 
   count = Math.trunc(Math.random() * 51) + 1;
 
-  containerImg.style.backgroundImage = `url(img/${count}.jpeg)`
+  containerImg.style.backgroundImage = `url(img/vertical/${count}.jpeg)`
 })
 
 
@@ -124,6 +124,29 @@ imgPreviewBoxes.forEach(function(unit) {
 
 
 
+
+document.querySelector('.container-Vertical_Img_Link--img1').src = `img/vertical/${Math.trunc(Math.random() * 51) + 1}.jpeg`
+
+document.querySelector('.container-Vertical_Img_Link--img2').src = `img/vertical/${Math.trunc(Math.random() * 50) + 1}.jpeg`
+
+document.querySelector('.container-Vertical_Img_Link--img3').src = `img/vertical/${Math.trunc(Math.random() * 49) + 1}.jpeg`
+
+document.querySelector('.container-Vertical_Img_Link--img4').src = `img/vertical/${Math.trunc(Math.random() * 48) + 1}.jpeg`
+
+
+
+document.querySelector('.section-Main_Page-Vertical-button').addEventListener('click', function() {
+
+  document.querySelector('.section-Main_Page').style.display = 'none'
+  document.querySelector('.section-Vertical_Img').style.display = 'block'
+})
+
+
+document.querySelector('.btn-menu').addEventListener('click', function() {
+
+  document.querySelector('.section-Main_Page').style.display = 'block'
+  document.querySelector('.section-Vertical_Img').style.display = 'none'
+})
 
 
 

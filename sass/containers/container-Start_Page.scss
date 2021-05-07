@@ -1,4 +1,6 @@
 .container-Start_Page {
+  display: none;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -12,7 +14,7 @@
   z-index: 99;
 
   text-align: center;
-  transition: all 1s;
+  transition: all 1sж
 
   h3 {
     color: #fff;

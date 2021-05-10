@@ -19,7 +19,7 @@
   &--img2 {
     width: auto;
     height: 200px;
-    transform: translateX(-200px) translateY(50px);
+    transform: translateX(-220px) translateY(50px);
     z-index: 9;
     border-radius: 20px;
     margin-top: 20px;
@@ -29,11 +29,10 @@
   }
 
 
-
   &--img3 {
     width: auto;
-      height: 200px;
-    transform: translateX(-450px) translateY(100px);
+    height: 200px;
+    transform: translateX(-475px) translateY(100px);
     z-index: 8;
     border-radius: 20px;
 

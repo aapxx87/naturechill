@@ -26,7 +26,7 @@
 
 // Array для базы изображений
 const imgBaseArr = [
-  ['img1', 'horizontal', 'https://i.pinimg.com/564x/0b/d8/51/0bd851f332f80d078972213793062f98.jpg', '', ''],
+  ['img1', 'horizontal', 'https://i.pinimg.com/564x/0b/d8/51/0bd851f332f80d078972213793062f98.jpg', 'https://www.pinterest.ru/pin/714031715923216495/', ''],
   ['img2', 'horizontal', 'https://i.pinimg.com/564x/6e/0e/ad/6e0ead31ba2a883bfb31c995c9830cbe.jpg', '', ''],
   ['img3', 'horizontal', 'https://i.pinimg.com/564x/37/38/1c/37381c0e7e5831bfb27159a5f42f310a.jpg', '', ''],
   ['img4', 'vertical', 'https://i.imgur.com/wH3Oo0x.jpg', '', 'https://imgur.com/gallery/T4R7y11'],
@@ -66,6 +66,17 @@ const imgBaseArr = [
   ['img38', 'vertical', 'https://cdn.dribbble.com/users/995236/screenshots/3171258/attachments/674417/________.png', 'https://www.pinterest.ru/pin/714031715923128492/', 'https://dribbble.com/shots/3171258-Sunny-day-snowy-day/attachments/674417', ['japan']],
   ['img39', 'vertical', 'https://i.pinimg.com/564x/88/02/56/880256682f6eb7f89536277189cdca17.jpg', 'https://www.pinterest.ru/pin/714031715923128498/', '', ['japan', 'forest']],
   ['img40', 'vertical', 'https://i.pinimg.com/564x/19/2e/98/192e98497ee5e06c783ffa3517f271f7.jpg', 'https://www.pinterest.ru/pin/714031715922847991/', '', ['forest', 'night']],
+  ['img41', 'vertical', 'https://i.pinimg.com/564x/ab/e7/8e/abe78e8ee030ed992cdfa1fcc76da3f8.jpg', 'https://www.pinterest.ru/pin/714031715922814877/', '', ['forest', 'night']],
+  ['img42', 'vertical', 'https://i.pinimg.com/564x/41/13/0d/41130d5bd4426dde930a8d3aeeacf4e0.jpg', 'https://www.pinterest.ru/pin/714031715922814873/', '', ['forest', 'night', 'mountains']],
+  ['img43', 'vertical', 'https://i.pinimg.com/564x/f0/eb/e4/f0ebe49f0a55e386981c027fd0140205.jpg', 'https://www.pinterest.ru/pin/714031715923312225/', '', ['lake']],
+  ['img44', 'vertical', 'https://cdn.dribbble.com/users/995236/screenshots/2803964/attachments/574346/232323.png', 'https://www.pinterest.ru/pin/714031715923312007/', '', ['night']],
+  ['img45', 'vertical', 'https://i.pinimg.com/564x/ee/b9/ab/eeb9abadf828414138686042fbf446e1.jpg', 'https://www.pinterest.ru/pin/714031715923311993/', '', ['night']],
+  ['img45', 'vertical', 'https://cdn-0.idownloadblog.com/wp-content/uploads/2018/05/camping-iphone-wallpaper-paul-e-bhoy-768x1536.png', 'https://www.pinterest.ru/pin/714031715923311976/', 'https://www.idownloadblog.com/2018/05/13/cartoon-landscapes-wallpapers/', ['']],
+  ['img46', 'vertical', 'https://i.pinimg.com/564x/53/57/84/5357842d632b26e0b4f762cd830a5b12.jpg', 'https://www.pinterest.ru/pin/648729521319011697/', '', ['']],
+  ['img47', 'vertical', 'https://i.pinimg.com/564x/d4/1f/c1/d41fc116f371abe852886b4928c6436d.jpg', 'https://www.pinterest.ru/pin/563442603372753621/', '', ['night']],
+  ['img48', 'horizontal', 'https://cdn.dribbble.com/users/192276/screenshots/2500960/attachments/491748/midnightinthevalley-2560x1440.png', 'https://www.pinterest.ru/pin/714031715923172475/', 'https://dribbble.com/shots/2500960-Midnight-in-the-Valley/attachments/491748', ['night']],
+  ['img49', 'horizontal', 'https://i.pinimg.com/564x/72/96/9f/72969fd2668e33d52f215a3573b485a0.jpg', 'https://www.pinterest.ru/pin/465207836506248851/', '', ['night']],
+  ['img50', 'horizontal', 'https://i.pinimg.com/564x/e3/bb/d8/e3bbd89d4f1af87d9fa6607d5f2e7382.jpg', 'https://www.pinterest.ru/pin/714031715923216502/', '', ['']],
 ]
 
 

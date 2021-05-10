@@ -5,10 +5,105 @@
 
 body {
   background-color: #2E2F34;
-  overflow: hidden;
   font-family: 'Viaoda Libre', cursive; }
 
+.section-Main_Page h2 {
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 20px; }
+
+.section-Main_Page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #150153, #1d085a, #241060, #2b1867, #321f6e);
+  padding-top: 20px;
+  padding-bottom: 80px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.section-Vertical_Img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: none; }
+
+.container-Vertical_Img_Link {
+  display: flex;
+  width: 100%;
+  height: 400px; }
+  .container-Vertical_Img_Link--img1 {
+    width: 200px;
+    height: 100%;
+    transform: translateX(20px);
+    z-index: 10;
+    border-radius: 20px;
+    -webkit-box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3); }
+  .container-Vertical_Img_Link--img2 {
+    width: 200px;
+    height: 90%;
+    transform: translateX(-125px);
+    z-index: 9;
+    border-radius: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3); }
+  .container-Vertical_Img_Link--img3 {
+    width: 200px;
+    height: 80%;
+    transform: translateX(-270px);
+    z-index: 8;
+    border-radius: 20px;
+    margin-top: 40px;
+    -webkit-box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3); }
+  .container-Vertical_Img_Link--img4 {
+    width: 200px;
+    height: 70%;
+    transform: translateX(-425px);
+    z-index: 7;
+    border-radius: 20px;
+    margin-top: 60px;
+    -webkit-box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3); }
+
+.container-Horizontal_Img_Link {
+  display: flex;
+  width: 100%;
+  height: 370px; }
+  .container-Horizontal_Img_Link--img1 {
+    width: auto;
+    height: 200px;
+    transform: translateX(20px);
+    z-index: 10;
+    border-radius: 20px;
+    -webkit-box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3); }
+  .container-Horizontal_Img_Link--img2 {
+    width: auto;
+    height: 200px;
+    transform: translateX(-220px) translateY(50px);
+    z-index: 9;
+    border-radius: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3); }
+  .container-Horizontal_Img_Link--img3 {
+    width: auto;
+    height: 200px;
+    transform: translateX(-475px) translateY(100px);
+    z-index: 8;
+    border-radius: 20px;
+    margin-top: 40px;
+    -webkit-box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3); }
+
 .container-Start_Page {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -30,7 +125,6 @@ body {
 .container-Main_Img_View {
   width: 100%;
   height: 100vh;
-  background-image: url(img/1.jpeg);
   background-position: center;
   background-size: cover;
   z-index: 10;
@@ -66,7 +160,6 @@ body {
     width: 90px;
     height: 160px;
     margin-right: 4px;
-    background-image: url(img/1.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -107,17 +200,21 @@ body {
   color: white;
   -webkit-box-shadow: 0px -12px 21px -16px rgba(0, 0, 0, 0.87);
   box-shadow: 0px -12px 21px -16px rgba(0, 0, 0, 0.87); }
-  .btn-prev, .btn-next, .btn-rand, .btn-list {
+  .btn-prev, .btn-next, .btn-rand, .btn-list, .btn-menu {
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     color: rgba(255, 255, 255, 0.9);
     border: 1px solid rgba(255, 255, 255, 0.6);
     transition: all 0.4s; }
-    .btn-prev:active, .btn-next:active, .btn-rand:active, .btn-list:active {
+    .btn-prev:active, .btn-next:active, .btn-rand:active, .btn-list:active, .btn-menu:active {
       transform: scale(1.3); }
   .btn span {
     color: rgba(255, 255, 255, 0.7); }
+  .btn-menu {
+    position: absolute;
+    top: 30px;
+    left: 30px; }
 
 .btn-start {
   position: absolute;

@@ -1,4 +1,10 @@
 @import 'base/basic';
+@import 'base/typography';
+
+@import 'sections/sections_layout';   // секция просмотра вертикальных изображений
+
+@import 'containers/container-Vertical_Img_Link';   // контейнер перехода на вертикальные изображения с главного блока
+@import 'containers/container-Horizontal_Img_Link';   // контейнер перехода на горизонтальные изображения с главного блока
 
 @import 'containers/container-Start_Page';   // стартовая страница приветствия
 @import 'containers/container-Main_Img_View';   // основной контейнер вывода и просмотра изобажений

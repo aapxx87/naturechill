@@ -1,0 +1,23 @@
+.section-Main_Page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // background-image: linear-gradient(to right bottom, #2d3647, #273047, #212a46, #1d2445, #1b1d43);
+  background-image: linear-gradient(to bottom, #150153, #1d085a, #241060, #2b1867, #321f6e);
+  // background-color: #150153;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  // display: none;
+
+}
+
+
+// cекция просмотра вертикальных изображений
+.section-Vertical_Img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}

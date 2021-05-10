@@ -103,7 +103,6 @@ body {
     box-shadow: 9px 5px 8px 5px rgba(0, 0, 0, 0.3); }
 
 .container-Start_Page {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;

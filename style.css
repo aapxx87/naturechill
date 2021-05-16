@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #2E2F34;
+  background-color: black;
   font-family: 'Viaoda Libre', cursive; }
 
 .section-Main_Page h2 {
@@ -111,7 +111,9 @@ body {
 
 .container-Horizontal-Main_Img_View .horiz-img-view-box {
   width: 100%;
-  height: auto; }
+  height: auto;
+  border-radius: 15px;
+  background-color: white; }
 
 .container-Start_Page {
   position: absolute;

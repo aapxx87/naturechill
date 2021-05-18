@@ -23,6 +23,7 @@
   const containerAllPreview = document.querySelector('.container-Img_Preview') // Контейнер выезжающий с превью изображений
   const scrollBox = document.querySelector('.container-Img_Preview--scrollBox') // Скролл контейнер внутри "Контейнерf с превью изображений"
   const horizontalImgBox = document.querySelector('.horiz-img-view-box') // контейнер в который вставляются горизонтальные изображения
+  const sectionMainPage = document.querySelector('.section-Main_Page') // секция главной страницы с выбором вертикальных или горизонтальных изображений
 
   const overlay = document.querySelector('.overlay') // overlay на основном эксране при открытии блока превью
 //
@@ -194,13 +195,15 @@ const imgBaseArr = [
 
   let countHorizontal = 0;
 
+  sectionMainPage.style.display = 'none';
+
   // вставляем первую картинку в главное окнг просмотра изображений
   containerImg.style.backgroundImage = `url(${imgUrlFilterArrVertical[count]})`
 
   // вставляем первую картинку в окно просмотра горизонтальных изображений
   horizontalImgBox.src = `${imgUrlFilterArrHorizontal[countHorizontal]}`
 
-  console.log(imgUrlFilterArrHorizontal);
+
 //
 
 
@@ -209,6 +212,7 @@ const imgBaseArr = [
 
   btnStart.addEventListener('click', function() {
     containerStartPage.style.transform = 'translateY(-100vh)'
+    sectionMainPage.style.display = 'block';
   })
 
   // вертикальные изображения
@@ -338,6 +342,7 @@ imgVerticalPrevieDownload()
 document.querySelector('.section-Main_Page-Vertical-button').addEventListener('click', function() {
 
   document.querySelector('.section-Main_Page').style.display = 'none'
+  // document.querySelector('.section-Horizontal_Img').style.display = 'none'
   document.querySelector('.section-Vertical_Img').style.display = 'block'
 })
 

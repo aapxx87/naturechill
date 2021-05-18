@@ -112,7 +112,6 @@ const imgBaseArr = [
   ['img76', 'horizontal', 'https://i.pinimg.com/564x/a9/87/08/a987088fea7fad2df0ccb1305fabcc36.jpg', 'https://www.pinterest.ru/pin/714031715923216569/', '', ['']],
   ['img77', 'horizontal', 'https://i.pinimg.com/564x/8e/3f/59/8e3f59787f6802df7cf2b31b8b36d396.jpg', 'https://www.pinterest.ru/pin/508273507944052418/', '', ['']],
   ['img78', 'horizontal', 'https://i.pinimg.com/564x/d1/0c/d8/d10cd853ce75f3e5bfa2cf6f42e371d1.jpg', 'https://www.pinterest.ru/pin/741194051160492223/', '', ['']],
-
   ['img79', 'horizontal', 'https://i.pinimg.com/564x/3c/d4/86/3cd4868acd05152efe05ec9a3bad352e.jpg', 'https://www.pinterest.ru/pin/714031715923582070/', '', ['']],
   ['img80', 'horizontal', 'https://i.pinimg.com/564x/a8/b0/ee/a8b0ee5a89e093ef6448f198c01fe8df.jpg', 'https://www.pinterest.ru/pin/714031715923582063/', '', ['']],
   ['img81', 'horizontal', 'https://i.pinimg.com/564x/3d/25/34/3d253440c68ea63b86806912e278746f.jpg', 'https://www.pinterest.ru/pin/714031715923581997/', '', ['']],
@@ -293,7 +292,7 @@ const imgBaseArr = [
 
 
 
-// Открытие картинки из Блока превью на главный экран просмотра изображений по клику
+// Открытие картинки из Блока превью на главный экран просмотра изображений по клику - Вертикальные изображения
 
   // массив со всеми превьюхами (блоки с выгруженными картинками)
   const imgPreviewBoxes = document.querySelectorAll('.container-Img_Preview--Preview_Img_Box')
@@ -311,6 +310,8 @@ const imgBaseArr = [
     })
   })
 //
+
+
 
 
 
@@ -371,44 +372,13 @@ document.querySelector('.btn-menu-horiz').addEventListener('click', function() {
   imgVerticalPrevieDownload()
 
   document.querySelector('.section-Main_Page').style.display = 'block'
-  document.querySelector('.section-Vertical_Img').style.display = 'none'
+  document.querySelector('.section-Horizontal_Img').style.display = 'none'
 })
 
 
 
 
-// драфт Object для базы изображений
-const imgBaseObj = {
-  img1: {
-    url: 'https://i.pinimg.com/564x/0b/d8/51/0bd851f332f80d078972213793062f98.jpg',
-    type: 'horisontal',
-    tags: []
-  },
-  img2: {
-    url: 'https://i.pinimg.com/564x/6e/0e/ad/6e0ead31ba2a883bfb31c995c9830cbe.jpg',
-    type: 'horisontal',
-    tags: []
-  },
-  img3: {
-    url: 'https://i.pinimg.com/564x/37/38/1c/37381c0e7e5831bfb27159a5f42f310a.jpg',
-    type: 'horisontal',
-    tags: []
-  },
-  img4: {
-    url: 'https://i.pinimg.com/564x/37/38/1c/37381c0e7e5831bfb27159a5f42f310a.jpg',
-    type: 'vertical',
-    tags: []
-  },
-  img5: {
-    url: 'https://i.pinimg.com/564x/37/38/1c/37381c0e7e5831bfb27159a5f42f310a.jpg',
-    type: 'vertical',
-    tags: []
-  },
-  filterType: function() {
 
-    return this.img1.type
-  }
-}
 
 
 

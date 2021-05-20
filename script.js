@@ -401,7 +401,7 @@ document.querySelector('.btn-list-horiz').addEventListener('click', function() {
 })
 
 document.querySelector('.overlay-Horizontal').addEventListener('click', function() {
-  document.querySelector('.container-Horizontal-Img_Preview').style.transform = 'translate(150px, -50%)'
+  document.querySelector('.container-Horizontal-Img_Preview').style.transform = 'translate(180px, -50%)'
   document.querySelector('.overlay-Horizontal').style.display = 'none'
 })
 

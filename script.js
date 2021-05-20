@@ -407,7 +407,24 @@ document.querySelector('.overlay-Horizontal').addEventListener('click', function
 
 
 
+// Открытие картинки из Блока превью на  экран просмотра горизонтальных изображений по клику -
 
+  // массив со всеми превьюхами (блоки с выгруженными картинками)
+  const imgPreviewBoxesHoriz = document.querySelectorAll('.horiz-img-preview')
+
+  // перебираем массив, чтобы понять, по какому элеементу кликнули
+  imgPreviewBoxesHoriz.forEach(function(unit) {
+
+    unit.addEventListener('click', function() {
+
+      // забираем у кликнутого элемента свойство backgroundImage, что равно url(img/1.jpeg)
+      const style = unit.src
+
+      // вставляем забранный выше url в свойство backgroundImage основного экрана просмотра изображений
+      document.querySelector('.horiz-img-view-box').src = style
+    })
+  })
+//
 
 
 

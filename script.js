@@ -22,6 +22,7 @@
   const changePanel = document.querySelector('.buttons-Box--Main_Img_View')    // Блок кнопок на основном экране
   const containerAllPreview = document.querySelector('.container-Img_Preview') // Контейнер выезжающий с превью изображений
   const scrollBox = document.querySelector('.container-Img_Preview--scrollBox') // Скролл контейнер внутри "Контейнерf с превью изображений"
+  const scrollBoxHoriz = document.querySelector('.container-Horizontal-Img_Preview--scrollBox') // Скролл контейнер внутри "Контейнерf с превью изображений"
   const horizontalImgBox = document.querySelector('.horiz-img-view-box') // контейнер в который вставляются горизонтальные изображения
   const sectionMainPage = document.querySelector('.section-Main_Page') // секция главной страницы с выбором вертикальных или горизонтальных изображений
 
@@ -183,6 +184,20 @@ const imgBaseArr = [
     scrollBox.insertAdjacentHTML("beforeEnd", `<div class="container-Img_Preview--Preview_Img_Box" style="background-image: url(${imgUrlFilterArrVertical[i]});"></div>`)
   }
 //
+
+
+
+
+
+// Заполняем превью изображениями horizontal
+
+  // проходимся циклом (i = длинне массива с url вертикальных изображений) и вставляем в scrollbox с url из массива (превью картинок)
+  for (let i = 0; i < numbersHorisArray; i++) {
+    document.querySelector('.container-Horizontal-Img_Preview').insertAdjacentHTML("beforeEnd", `<img src='${imgUrlFilterArrHorizontal[i]}' class="horiz-img-preview"></img>`)
+  }
+//
+
+
 
 
 
@@ -375,6 +390,20 @@ document.querySelector('.btn-menu-horiz').addEventListener('click', function() {
   document.querySelector('.section-Horizontal_Img').style.display = 'none'
 })
 
+
+
+
+
+// выезжание и уежание блока просмотра превью в горизонтальных изображениях
+document.querySelector('.btn-list-horiz').addEventListener('click', function() {
+  document.querySelector('.container-Horizontal-Img_Preview').style.transform = 'translate(0, -50%)'
+  document.querySelector('.overlay-Horizontal').style.display = 'block'
+})
+
+document.querySelector('.overlay-Horizontal').addEventListener('click', function() {
+  document.querySelector('.container-Horizontal-Img_Preview').style.transform = 'translate(150px, -50%)'
+  document.querySelector('.overlay-Horizontal').style.display = 'none'
+})
 
 
 

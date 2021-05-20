@@ -1,0 +1,48 @@
+.container-Horizontal-Img_Preview {
+  width: 150px;
+  height: 550px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(150px, -50%);
+
+
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  transition: all .4s;
+    z-index: 25;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+// затемнение страницы просмотра изображений при выезжании блока превьюх
+.overlay-Horizontal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
+  // z-index: 25;
+  transition: all 1s;
+}
+
+
+.horiz-img-preview {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

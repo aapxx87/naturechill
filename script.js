@@ -137,7 +137,11 @@ const imgBaseArr = [
   ['img99', 'horizontal', 'https://i.pinimg.com/originals/03/43/f9/0343f96e901833f83bb676c796be9e32.gif', 'https://www.pinterest.ru/pin/714031715923581334/', '', ['']],
   ['img100', 'horizontal', 'https://i.pinimg.com/originals/88/25/7f/88257fc06f6e674a8ffc2a39bd3de33a.gif', 'https://www.pinterest.ru/pin/714031715923581259/', '', ['']],
   ['img101', 'horizontal', 'https://i.pinimg.com/564x/3f/4c/7c/3f4c7ce518c60e3ce59ae5e34bff2bf4.jpg', 'https://www.pinterest.ru/pin/193303008992499797/', '', ['']],
-  ['img101', 'horizontal', 'https://i.pinimg.com/564x/81/b1/9f/81b19f46cff181c3a810c52f6cbba0b3.jpg', 'https://www.pinterest.ru/pin/701154235711427564/', '', ['']],
+  ['img102', 'horizontal', 'https://i.pinimg.com/564x/81/b1/9f/81b19f46cff181c3a810c52f6cbba0b3.jpg', 'https://www.pinterest.ru/pin/701154235711427564/', '', ['']],
+  ['img103', 'vertical', 'https://i.pinimg.com/564x/06/19/b8/0619b8cd1565545dc4ba17b2e50452ca.jpg', 'https://www.pinterest.ru/pin/738449670131791134/', '', ['']],
+  ['img104', 'vertical', 'https://i.pinimg.com/564x/a4/9f/d4/a49fd4465260f937f2b7779acc5a888f.jpg', 'https://www.pinterest.ru/pin/239887117624967071/', '', ['']],
+  ['img105', 'vertical', 'https://i.pinimg.com/564x/37/c6/8a/37c68a190ea5a03ebf1f1128c4248e86.jpg', 'https://www.pinterest.ru/pin/887279564055694646/', '', ['']],
+  ['img106', 'horizontal', 'https://i.pinimg.com/564x/0a/4a/a7/0a4aa77ac9eaba03075418a9ce70e14a.jpg', 'https://www.pinterest.ru/pin/343047696615166910/', '', ['']],
 ]
 
 
